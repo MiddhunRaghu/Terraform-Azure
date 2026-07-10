@@ -1,0 +1,11 @@
+# Secrets - never commit
+var.sh
+*.tfvars
+.env
+
+# Terraform state and cache
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+*.tfplan
+crash.log
