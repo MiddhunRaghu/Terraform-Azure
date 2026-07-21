@@ -1,0 +1,38 @@
+{
+  "app_name": "cloud-infra-dashboard",
+  "version": "2.4.1",
+  "environment": "production",
+  "debug_mode": false,
+  "max_connections": 150,
+  "timeout_seconds": 30,
+  "created_at": "2026-07-21T10:30:00Z",
+  "server": {
+    "host": "10.0.1.15",
+    "port": 8443,
+    "protocol": "https",
+    "region": "ap-south-1"
+  },
+  "database": {
+    "engine": "postgresql",
+    "version": "15.3",
+    "host": "db-prod.internal.local",
+    "port": 5432,
+    "name": "infra_db",
+    "ssl_enabled": true,
+    "max_pool_size": 20
+  },
+  "features": {
+    "auto_scaling": true,
+    "monitoring": true,
+    "backup_enabled": true,
+    "logging_level": "INFO"
+  },
+  "allowed_ips": [
+    "192.168.1.10",
+    "192.168.1.11",
+    "10.0.0.5"
+  ],
+  "tags": {
+    "team": "devops"
+}
+}
